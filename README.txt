@@ -37,6 +37,6 @@ Pasos para implementar todo
 *	Configurar MySQL WorkBench
 *	Descargar Repositorio github desde VS Code
 *	Establecer conexión a BD dentro de VS Code
-*	Ejecutar las "Querys iniciales.txt" 
+*	Ejecutar las "Querys iniciales.sql" 
 *	Revisar datos de conexión en "app.py"
 *	En terminal (Ctrl+Shift+ñ) "Flask run"

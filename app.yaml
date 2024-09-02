@@ -1,0 +1,17 @@
+runtime: python310  # Asegúrate de que la versión de Python sea compatible
+
+entrypoint: gunicorn -b :$PORT --timeout 120 app:app  # 'app' es el nombre del archivo y 'app' la instancia de Flask
+
+env_variables:
+    INSTANCE_CONNECTION_NAME: "mundofarma:us-central1:sqlmundofarma"  # Reemplaza con tu ID de conexión de Cloud SQL
+    DB_USER: "root"
+    DB_PASS: "Elekna.24#"
+    DB_NAME: "mundofarma"
+
+handlers:
+- url: /.*
+  script: auto
+
+  # Permisos para el acceso a la red privada y a Cloud SQL
+beta_settings:
+  cloud_sql_instances: mundofarma:us-central1:sqlmundofarma  # El ID de tu instancia de Cloud SQL
