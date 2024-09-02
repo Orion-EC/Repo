@@ -1,2 +1,0 @@
-CREATE DATABASE MundoFarma
-    DEFAULT CHARACTER SET = 'utf8mb4';
