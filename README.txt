@@ -6,6 +6,8 @@ Requerimientos para ejecutar todo:
 *	MySQL WorkBench
 *	MySQL Client
 *	GIT
+*   git config user.name "nombre"
+*   git config user.email "correo"
 *	Python
 *	pip install Flask
 *	pip install mysql-connector-python
