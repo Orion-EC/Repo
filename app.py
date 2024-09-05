@@ -26,7 +26,7 @@ def get_connection():
     )
     return connection
 
-@app.route('/')
+@application.route('/')
 def mostrar_productos():
     connection = get_connection()
     cursor = connection.cursor()
