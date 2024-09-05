@@ -4,7 +4,7 @@ from google.cloud.sql.connector import Connector
 
 
 # Crear una aplicación Flask
-app = Flask(__name__)
+application = Flask(__name__)
 
 # Configuración de conexión a Cloud SQL
 def get_connection():
@@ -38,4 +38,4 @@ def mostrar_productos():
     return render_template('MundoFarma.html', productos=resultados)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
